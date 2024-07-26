@@ -77,5 +77,17 @@ On the "Changes" tab. Hover over `create_plots.py` and click the add icon.
 
 Then click the down arrow next to the "Commit" button and click "Commit & Push"
 
+Type in your commit message and click the tick icon on the top right of the screen.
 
+Go to https://github.com/Oliver-Lorenz-dev/placement_python_code
+
+You should see a notification saying your branch has had recent pushes. Click the "Compare and pull request" button
+
+Add me as a reviewer and assign yourself to the pull request.
+
+Write a description of what your pull request entails.
+
+Click create pull request and ask for my review.
+
+Once I have approved the pull request, you can merge it into the main branch.
 
