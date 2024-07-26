@@ -64,4 +64,30 @@ You will need to edit x axis to plot `In_silico_ST` rather than `GPSCs`, the x a
 
 Save the plot to a file called `ST_plot.png`
 
+### Task 5:
+Create a pull request to add your changes.
+
+Ask me to add you as a collaborator to the project.
+
+On the bottom left of the screen in VScode you should see a branch icon with "main" written next to it. Click on this, then click create a new branch. Name the branch "add-extra-plots".
+
+On the far left hand side of the screen, you should see some icons. The third one from the top shows some branches. This is the version control tab. Click the icon.
+
+On the "Changes" tab. Hover over `create_plots.py` and click the add icon.
+
+Then click the down arrow next to the "Commit" button and click "Commit & Push"
+
+Type in your commit message and click the tick icon on the top right of the screen.
+
+Go to https://github.com/Oliver-Lorenz-dev/placement_python_code
+
+You should see a notification saying your branch has had recent pushes. Click the "Compare and pull request" button
+
+Add me as a reviewer and assign yourself to the pull request.
+
+Write a description of what your pull request entails.
+
+Click create pull request and ask for my review.
+
+Once I have approved the pull request, you can merge it into the main branch.
 
