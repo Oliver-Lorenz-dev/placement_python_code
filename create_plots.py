@@ -224,42 +224,50 @@ def plot_Vaccine_period_counts(df: pd.DataFrame):
     # show the plot
     plt.savefig("Vaccine_period_plot.png", bbox_inches = 'tight')
 
-# plot the GPSC counts
-plot_gpsc_counts(df)
-
-plt.clf()
 
 
-# plot the Country counts
-plot_country_counts(df)
+def main(df):
+    # plot the GPSC counts
+    plot_gpsc_counts(df)
 
-#clears so they dont all run at once
-plt.clf()
+    #clears so they dont all run at once
+    plt.clf()
 
-# plot the Continent counts
-plot_continent_counts(df)
 
-plt.clf()
+    # plot the Country counts
+    plot_country_counts(df)
 
-# plot the time counts
-plot_time_counts(df)    
 
-plt.clf()
+    plt.clf()
 
-# plot the ST counts
-plot_st_counts(df)
+    # plot the Continent counts
+    plot_continent_counts(df)
 
-plt.clf()
+    plt.clf()
 
-# plot the PCV type counts
-plot_PCV_type_counts(df)
+    # plot the time counts
+    plot_time_counts(df)    
 
-plt.clf()
+    plt.clf()
 
-# plot the Phenotypic Serotype counts
-plot_Phenotypic_serotype_counts (df)
+    # plot the ST counts
+    plot_st_counts(df)
 
-plt.clf()
+    plt.clf()
 
-# plot the Vaccine period counts
-plot_Vaccine_period_counts (df)
+    # plot the PCV type counts
+    plot_PCV_type_counts(df)
+
+    plt.clf()
+
+    # plot the Phenotypic Serotype counts
+    plot_Phenotypic_serotype_counts (df)
+
+    plt.clf()
+
+    # plot the Vaccine period counts
+    plot_Vaccine_period_counts (df)
+
+    plt.clf()
+
+main (df)
