@@ -33,7 +33,7 @@ def plot_gpsc_counts(df: pd.DataFrame):
     plt.title("Proportion of GPSCs across 11F_like samples in GPS")
 
     # show the plot
-    plt.savefig("GPSC_plot.png", bbox_inches = 'tight')
+    plt.savefig("GPSC_plot.png", bbox_inches="tight")
 
 
 def plot_continent_counts(df: pd.DataFrame):
@@ -60,8 +60,7 @@ def plot_continent_counts(df: pd.DataFrame):
     plt.title("Proportion of Continents across 11F_like samples in GPS")
 
     # show the plot
-    plt.savefig("Continents_plot.png", bbox_inches = 'tight')
-
+    plt.savefig("Continents_plot.png", bbox_inches="tight")
 
 
 def plot_country_counts(df: pd.DataFrame):
@@ -88,8 +87,7 @@ def plot_country_counts(df: pd.DataFrame):
     plt.title("Proportion of Countries across 11F_like samples in GPS")
 
     # show the plot
-    plt.savefig("Country_plot.png", bbox_inches = 'tight')
-  
+    plt.savefig("Country_plot.png", bbox_inches="tight")
 
 
 def plot_time_counts(df: pd.DataFrame):
@@ -115,7 +113,7 @@ def plot_time_counts(df: pd.DataFrame):
     plt.title("Proportion of time across 11F_like samples in GPS")
 
     # show the plot
-    plt.savefig("Time_plot.png", bbox_inches = 'tight')
+    plt.savefig("Time_plot.png", bbox_inches="tight")
 
 
 def plot_st_counts(df: pd.DataFrame):
@@ -142,7 +140,7 @@ def plot_st_counts(df: pd.DataFrame):
     plt.title("Proportion of STs across 11F_like samples in GPS")
 
     # show the plot
-    plt.savefig("ST_plot.png", bbox_inches = 'tight')
+    plt.savefig("ST_plot.png", bbox_inches="tight")
 
 
 def plot_PCV_type_counts(df: pd.DataFrame):
@@ -169,14 +167,16 @@ def plot_PCV_type_counts(df: pd.DataFrame):
     plt.title("Proportion of PCV_type across 11F_like samples in GPS")
 
     # show the plot
-    plt.savefig("PCV_type_plot.png", bbox_inches = 'tight')
+    plt.savefig("PCV_type_plot.png", bbox_inches="tight")
 
 
 def plot_Phenotypic_serotype_counts(df: pd.DataFrame):
     # function to plot the percentage Phenotypic serotype distribution across the dataset
 
     # set the colour palette up with the number of colours equal to the number of unique Phenotypic serotypes
-    colours = sns.color_palette("bright", n_colors=len(pd.unique(df["Phenotypic_serotype"])))
+    colours = sns.color_palette(
+        "bright", n_colors=len(pd.unique(df["Phenotypic_serotype"]))
+    )
 
     # create the plot
     sns.countplot(
@@ -195,7 +195,7 @@ def plot_Phenotypic_serotype_counts(df: pd.DataFrame):
     plt.title("Proportion of Phenotypic serotypes across 11F_like samples in GPS")
 
     # show the plot
-    plt.savefig("Phenotypic_serotype_plot.png", bbox_inches = 'tight')
+    plt.savefig("Phenotypic_serotype_plot.png", bbox_inches="tight")
 
 
 def plot_Vaccine_period_counts(df: pd.DataFrame):
@@ -222,21 +222,18 @@ def plot_Vaccine_period_counts(df: pd.DataFrame):
     plt.title("Proportion of Vaccine periods across 11F_like samples in GPS")
 
     # show the plot
-    plt.savefig("Vaccine_period_plot.png", bbox_inches = 'tight')
-
+    plt.savefig("Vaccine_period_plot.png", bbox_inches="tight")
 
 
 def main(df):
     # plot the GPSC counts
     plot_gpsc_counts(df)
 
-    #clears so they dont all run at once
+    # clears so they dont all run at once
     plt.clf()
-
 
     # plot the Country counts
     plot_country_counts(df)
-
 
     plt.clf()
 
@@ -246,7 +243,7 @@ def main(df):
     plt.clf()
 
     # plot the time counts
-    plot_time_counts(df)    
+    plot_time_counts(df)
 
     plt.clf()
 
@@ -261,13 +258,14 @@ def main(df):
     plt.clf()
 
     # plot the Phenotypic Serotype counts
-    plot_Phenotypic_serotype_counts (df)
+    plot_Phenotypic_serotype_counts(df)
 
     plt.clf()
 
     # plot the Vaccine period counts
-    plot_Vaccine_period_counts (df)
+    plot_Vaccine_period_counts(df)
 
     plt.clf()
 
-main (df)
+
+main(df)
